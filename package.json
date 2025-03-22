@@ -1,0 +1,33 @@
+{
+  "name": "task-5-authorization-challenge",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "set NODE_ENV=development&& nodemon server.js",
+    "start:prod": "set NODE_ENV=production&& node server.js",
+    "seed:import": "node data/data-script.js --import",
+    "seed:delete": "node data/data-script.js --delete",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Create a system that demonstrates different levels of authorization for users, including roles and permissions.",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}
